@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} - Financial Portfolio</title>
+  <title>{{ page.title }} - Accounts Payable Analytics</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,7 +23,7 @@
   <div class="container mx-auto px-4 py-3 flex justify-between items-center">
     <!-- Site Title -->
     <a href="{{ site.baseurl }}/" class="text-xl font-semibold text-indigo-600 hover:text-indigo-800">
-      Finance Portfolio
+      Accounts Payable Analytics
     </a>
 
     <!-- Back to Portfolio (desktop only) -->
@@ -48,6 +48,7 @@
   <div class="container mx-auto px-4">
     <ul id="menu" class="hidden md:flex flex-col md:flex-row text-gray-600 absolute md:static bg-white md:bg-transparent left-0 top-16 md:top-auto w-full md:w-auto px-4 md:px-0 py-4 md:py-0 shadow-md md:shadow-none z-50
                         space-y-2 md:space-y-0 md:space-x-6">
+
       <!-- Back to Portfolio (mobile only) -->
       <li class="md:hidden">
         <a href="{{ site.url }}/" class="block py-2 text-sm text-indigo-500 hover:text-indigo-700 flex items-center space-x-1">
@@ -62,65 +63,66 @@
       <li>
         <a href="{{ site.baseurl }}/"
            class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl or page.url == site.baseurl | append: '/' %}font-bold text-indigo-700{% endif %}">
-          Home
+          Overview
         </a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/charts/"
-           class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl | append: '/charts/' %}font-bold text-indigo-700{% endif %}">
-          Financial Charts
+        <a href="{{ site.baseurl }}/invoice-timeliness/"
+           class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl | append: '/invoice-timeliness/' %}font-bold text-indigo-700{% endif %}">
+          Invoice Timeliness
         </a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/vba/"
-           class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl | append: '/vba/' %}font-bold text-indigo-700{% endif %}">
-          Excel VBA
+        <a href="{{ site.baseurl }}/dpo-trends/"
+           class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl | append: '/dpo-trends/' %}font-bold text-indigo-700{% endif %}">
+          DPO Trends
         </a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/sql/"
-           class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl | append: '/sql/' %}font-bold text-indigo-700{% endif %}">
-          SQL Analysis
+        <a href="{{ site.baseurl }}/vendor-behavior/"
+           class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl | append: '/vendor-behavior/' %}font-bold text-indigo-700{% endif %}">
+          Vendor Behavior
         </a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/powerbi/"
-           class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl | append: '/powerbi/' %}font-bold text-indigo-700{% endif %}">
-          Power BI
+        <a href="{{ site.baseurl }}/cash-flow/"
+           class="block py-2 hover:text-indigo-600 {% if page.url == site.baseurl | append: '/cash-flow/' %}font-bold text-indigo-700{% endif %}">
+          Cash Flow Impact
         </a>
       </li>
     </ul>
   </div>
 </nav>
 
-  <!-- Main content -->
-  <main class="flex-grow container mx-auto px-6 py-8 max-w-4xl">
-    {{ content }}
-  </main>
+<!-- Main content -->
+<main class="flex-grow container mx-auto px-6 py-8 max-w-4xl">
+  {{ content }}
+</main>
 
-  <footer class="bg-white border-t mt-12">
-    <div class="container mx-auto px-4 py-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-2">
-      <span>&copy; {{ site.time | date: "%Y" }} Marcin – Financial Analyst Portfolio</span>
-      <span>
-        <a href="https://www.linkedin.com/in/marcin-charzy%C5%84ski/" class="hover:text-indigo-600">LinkedIn</a> · 
-        <a href="https://github.com/Marcin-Charzynski" class="hover:text-indigo-600">GitHub</a>
-      </span>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-4 py-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-2">
+    <span>&copy; {{ site.time | date: "%Y" }} Marcin – Accounts Payable Analytics</span>
+    <span>
+      <a href="https://www.linkedin.com/in/marcin-charzy%C5%84ski/" class="hover:text-indigo-600">LinkedIn</a> · 
+      <a href="https://github.com/Marcin-Charzynski" class="hover:text-indigo-600">GitHub</a>
+    </span>
+  </div>
+</footer>
 
-  <script>
-    // Toggle mobile menu
-    document.getElementById('menu-btn').addEventListener('click', () => {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('hidden');
-    });
+<script>
+  // Toggle mobile menu
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+  });
 
     // Optional: Toggle code blocks
     function toggleCode(id) {
       const el = document.getElementById(id);
       el.style.display = (el.style.display === "none" || !el.style.display) ? "block" : "none";
     }
-  </script>
+</script>
 
 </body>
 </html>
