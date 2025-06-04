@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Invoice Timeliness
-permalink: /invoice-timeliness/
+permalink: /aging/
 ---
 
 ## 📅 Invoice Timeliness
@@ -44,7 +44,7 @@ Example insights from visualizations:
 - 📈 Monthly trend in payment timeliness
 - 🚩 Vendors with the highest late payment ratios
 
-<img src="{{ site.baseurl }}/assets/images/invoice-timeliness-dashboard.png" alt="Invoice Timeliness Dashboard" class="rounded-xl shadow-md mt-4" />
+<img src="{{ site.baseurl }}/assets/invoice-timeliness-dashboard.png" alt="Invoice Timeliness Dashboard" class="rounded-xl shadow-md mt-4" />
 
 ---
 

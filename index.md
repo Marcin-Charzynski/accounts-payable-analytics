@@ -15,14 +15,14 @@ Each page contains a specific area of analysis based on simulated transactional 
 
 ### 🔍 Explore the Analyses
 
-- 📅 [Invoice Timeliness]({{ site.baseurl }}/invoice-timeliness/):  
-  Measure on-time vs. overdue payments and detect bottlenecks in payment workflows.
+- 📅 [Invoice Aging & Timeliness]({{ site.baseurl }}/aging/):Measure overdue invoices, early vs. on-time payments, and detect payment delays.
 
-- ⏳ [DPO Trends]({{ site.baseurl }}/dpo-trends/):  
-  Analyze Days Payable Outstanding across time and suppliers to assess payment strategy.
+- 📈 [Invoice Volume & Value]({{ site.baseurl }}/volume/):Track how many invoices are processed and their total/average amounts over time.
 
-- 🤝 [Vendor Behavior]({{ site.baseurl }}/vendor-behavior/):  
-  Understand vendor reliability, early payment habits, and their effect on terms compliance.
+- 🤝 [Vendor Analysis]({{ site.baseurl }}/vendors/):Identify top suppliers, their invoice patterns, and opportunities for negotiation.
 
-- 💸 [Cash Flow Impact]({{ site.baseurl }}/cash-flow/):  
-  Estimate how payment timing scenarios influence liquidity and short-term planning.
+- 🧾 [Discrepancies & Errors]({{ site.baseurl }}/errors/):Analyze data inconsistencies and rejection reasons in the invoicing process.
+
+- 🔄 [Procure-to-Pay Cycle]({{ site.baseurl }}/cycle/):Assess processing time from invoice receipt to payment and detect process bottlenecks.
+
+- 🛠 [Operational Cost Control]({{ site.baseurl }}/costs/):Estimate cost per invoice and identify benefits of automation or outsourcing.
