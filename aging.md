@@ -24,7 +24,7 @@ This section focuses on how promptly invoices are paid in relation to their due 
 This analysis is based on a sample of invoice-level records including:
 
 - `Invoice ID`
-- `Vendor`
+- `VendorID`
 - `Invoice Date`
 - `Due Date`
 - `Payment Date`
@@ -51,7 +51,7 @@ Example insights from visualizations:
 ### 💡 Key Findings (Sample)
 
 > “Out of 1,200 invoices analyzed, **26%** were paid **late**, with an average delay of **12.5 days**.  
-> Vendor ‘ABC Logistics’ had over **40%** of their invoices paid after the due date.  
+> Vendor ID ‘12345’ had over **40%** of their invoices paid after the due date.  
 > Early payments accounted for **15%**, potentially reducing available cash unnecessarily.”
 
 ---
@@ -59,9 +59,41 @@ Example insights from visualizations:
 ### 🛠 Tools & Techniques
 
 - **Excel** – payment aging formulas, pivots  
-- **SQL** – days late calculation, categorization  
-- **Power BI** – conditional formatting, DAX filters
+- **Power BI** – DAX measures, conditional formatting, slicers  
+- *Note:* SQL was not used for this analysis.
 
 ---
 
-[← Back to Overview]({{ site.baseurl }}/)
+### 🔧 Key DAX Measures
+
+```DAX
+DaysLate = DATEDIFF('Invoices'[DueDate], 'Invoices'[PaymentDate], DAY)
+
+LateBucket = 
+SWITCH(
+    TRUE(),
+    'Invoices'[DaysLate] <= 0, "On Time / Early",
+    'Invoices'[DaysLate] <= 30, "1–30 days",
+    'Invoices'[DaysLate] <= 60, "31–60 days",
+    "61+ days"
+)
+
+TotalInvoices = COUNT('Invoices'[InvoiceID])
+
+LateInvoices = 
+CALCULATE(
+    COUNT('Invoices'[InvoiceID]),
+    'Invoices'[DaysLate] > 0
+)
+
+OnTimeOrEarlyInvoices = 
+CALCULATE(
+    COUNT('Invoices'[InvoiceID]),
+    'Invoices'[DaysLate] <= 0
+)
+
+PercentLate = DIVIDE([LateInvoices], [TotalInvoices], 0)
+
+PercentOnTime = DIVIDE([OnTimeOrEarlyInvoices], [TotalInvoices], 0)
+
+InvoiceMonth = FORMAT('Invoices'[InvoiceDate], "YYYY-MM")
