@@ -25,4 +25,4 @@ Each page contains a specific area of analysis based on simulated transactional 
 
 - 🔄 [Procure-to-Pay Cycle]({{ site.baseurl }}/cycle/):Assess processing time from invoice receipt to payment and detect process bottlenecks.
 
-- 🛠 [Operational Cost Control]({{ site.baseurl }}/costs/):Estimate cost per invoice and identify benefits of automation or outsourcing.
+- 🛠 [Operational Cost Control]({{ site.baseurl }}/operational-cost-control/):Estimate cost per invoice and identify benefits of automation or outsourcing.
