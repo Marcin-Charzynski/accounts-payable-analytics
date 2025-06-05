@@ -54,9 +54,9 @@ Example insights from visualizations:
 
 ### 💡 Key Findings (Sample)
 
-> “Out of 1,000 invoices analyzed, **60.4%** were paid **late**, with an average delay of **12.5 days**.  
+> “Out of 1,000 invoices analyzed, **60.4%** were paid **late**, with an average delay of **29 days**.  
 > Vendor ID ‘12345’ had over **40%** of their invoices paid after the due date.  
-> Early payments accounted for **15%**, potentially reducing available cash unnecessarily.”
+> Early payments accounted for **19.9%**, potentially reducing available cash unnecessarily.”
 
 ---
 
@@ -98,11 +98,41 @@ CALCULATE(
     'Invoices'[DaysLate] <= 0
 )
 
+OnTimeInvoices = 
+CALCULATE(
+    [TotalInvoices],
+    FILTER(
+        'Invoices',
+        'Invoices'[DaysLate] = 0
+    )
+)
+
 PercentLate = DIVIDE([LateInvoices], [TotalInvoices], 0)
 
-PercentOnTime = DIVIDE([OnTimeOrEarlyInvoices], [TotalInvoices], 0)
+PercentOnTime = DIVIDE([OnTimeInvoices], [TotalInvoices], 0)
 
 InvoiceMonth = FORMAT('Invoices'[InvoiceDate], "YYYY-MM")
+
+AverageDaysLate = 
+CALCULATE(
+    AVERAGE('Invoices'[DaysLate]),
+    FILTER(
+        'Invoices',
+        'Invoices'[DaysLate] > 0
+    )
+)
+
+EarlyInvoices = 
+CALCULATE(
+    [TotalInvoices],
+    FILTER(
+        'Invoices',
+        'Invoices'[DaysLate] < 0
+    )
+)
+
+PctEarlyPayments = 
+DIVIDE([EarlyInvoices], [TotalInvoices], 0)
 </code></pre>
 
 </details>
