@@ -23,13 +23,17 @@ This section focuses on how promptly invoices are paid in relation to their due 
 
 This analysis is based on a sample of invoice-level records including:
 
-- `Invoice ID`
-- `VendorID`
-- `Invoice Date`
-- `Due Date`
-- `Payment Date`
-- `Amount`
-- `Currency`
+
+| Table      | Description                                       | Key Columns                                       |
+|------------|-------------------------------------------------|--------------------------------------------------|
+| **Invoices** | Invoice-level details including payment and due dates | **InvoiceID** (PK), **VendorID**, **InvoiceDate**, **DueDate**, **PaymentDate**, **Amount** |
+
+- **InvoiceID** — Unique invoice identifier  
+- **VendorID** — Unique supplier/vendor identifier  
+- **InvoiceDate** — Date the invoice was issued  
+- **DueDate** — Date payment is due  
+- **PaymentDate** — Actual payment date (can be blank if unpaid)  
+- **Amount** — Invoice total value  
 
 📥 [Download sample CSV]({{ site.baseurl }}/data/accounts_payable_sample.csv)
 
@@ -59,14 +63,16 @@ Example insights from visualizations:
 ### 🛠 Tools & Techniques
 
 - **Excel** – payment aging formulas, pivots  
-- **Power BI** – DAX measures, conditional formatting, slicers  
-- *Note:* SQL was not used for this analysis.
+- **Power BI** – DAX measures, filters  
 
 ---
 
 ### 🔧 Key DAX Measures
 
-```DAX
+<details>
+<summary>Show DAX Code</summary>
+
+<pre><code class="language-dax">
 DaysLate = DATEDIFF('Invoices'[DueDate], 'Invoices'[PaymentDate], DAY)
 
 LateBucket = 
@@ -97,3 +103,6 @@ PercentLate = DIVIDE([LateInvoices], [TotalInvoices], 0)
 PercentOnTime = DIVIDE([OnTimeOrEarlyInvoices], [TotalInvoices], 0)
 
 InvoiceMonth = FORMAT('Invoices'[InvoiceDate], "YYYY-MM")
+</code></pre>
+
+</details>
