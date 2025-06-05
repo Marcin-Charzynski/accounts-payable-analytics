@@ -17,7 +17,7 @@ Each page contains a specific area of analysis based on simulated transactional 
 
 - 📅 [Invoice Aging & Timeliness]({{ site.baseurl }}/aging/):Measure overdue invoices, early vs. on-time payments, and detect payment delays.
 
-- 📈 [Invoice Volume & Value]({{ site.baseurl }}/volume/):Track how many invoices are processed and their total/average amounts over time.
+- 📈 [Invoice Volume & Value]({{ site.baseurl }}/volume-value/):Track how many invoices are processed and their total/average amounts over time.
 
 - 🤝 [Vendor Analysis]({{ site.baseurl }}/vendors/):Identify top suppliers, their invoice patterns, and opportunities for negotiation.
 
