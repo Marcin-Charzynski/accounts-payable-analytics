@@ -56,7 +56,7 @@ Example insights from visualizations:
 
 > Out of 1,000 invoices analyzed, **60.4%** were paid **late**, with an average delay of **29 days**.  
 > Early payments accounted for **19.9%**, potentially reducing available cash unnecessarily.
-> The average Days Payable Outstanding (DPO) was **18 days**, indicating relatively prompt invoice settlement.
+> The average Days Payable Outstanding (DPO) was **18 days**, indicating relatively prompt invoice settlement, which may indicate missed opportunities to optimize cash flow.
 
 ---
 
