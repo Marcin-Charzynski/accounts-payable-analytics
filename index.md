@@ -19,7 +19,7 @@ Each page contains a specific area of analysis based on simulated transactional 
 
 - 📈 [Invoice Volume & Value]({{ site.baseurl }}/volume-value/):Track how many invoices are processed and their total/average amounts over time.
 
-- 🤝 [Vendor Analysis]({{ site.baseurl }}/vendors/):Identify top suppliers, their invoice patterns, and opportunities for negotiation.
+- 🤝 [Vendor Analysis]({{ site.baseurl }}/vendor-analysis/):Identify top suppliers, their invoice patterns, and opportunities for negotiation.
 
 - 🧾 [Discrepancies & Errors]({{ site.baseurl }}/errors/):Analyze data inconsistencies and rejection reasons in the invoicing process.
 
