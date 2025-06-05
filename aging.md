@@ -35,7 +35,7 @@ This analysis is based on a sample of invoice-level records including:
 - **PaymentDate** — Actual payment date (can be blank if unpaid)  
 - **Amount** — Invoice total value  
 
-📥 [Download sample CSV]({{ site.baseurl }}/data/accounts_payable_sample.csv)
+📥 [Download sample CSV]({{ site.baseurl }}/data/invoice_aging_sample.csv)
 
 ---
 
@@ -54,7 +54,7 @@ Example insights from visualizations:
 
 ### 💡 Key Findings (Sample)
 
-> “Out of 1,200 invoices analyzed, **26%** were paid **late**, with an average delay of **12.5 days**.  
+> “Out of 1,000 invoices analyzed, **60.4%** were paid **late**, with an average delay of **12.5 days**.  
 > Vendor ID ‘12345’ had over **40%** of their invoices paid after the due date.  
 > Early payments accounted for **15%**, potentially reducing available cash unnecessarily.”
 
