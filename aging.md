@@ -54,15 +54,14 @@ Example insights from visualizations:
 
 ### 💡 Key Findings (Sample)
 
-> “Out of 1,000 invoices analyzed, **60.4%** were paid **late**, with an average delay of **29 days**.  
-> Vendor ID ‘12345’ had over **40%** of their invoices paid after the due date.  
-> Early payments accounted for **19.9%**, potentially reducing available cash unnecessarily.”
+> Out of 1,000 invoices analyzed, **60.4%** were paid **late**, with an average delay of **29 days**.  
+> Early payments accounted for **19.9%**, potentially reducing available cash unnecessarily.
+> The average Days Payable Outstanding (DPO) was **18 days**, indicating relatively prompt invoice settlement.
 
 ---
 
 ### 🛠 Tools & Techniques
 
-- **Excel** – payment aging formulas, pivots  
 - **Power BI** – DAX measures, filters  
 
 ---
@@ -133,6 +132,8 @@ CALCULATE(
 
 PctEarlyPayments = 
 DIVIDE([EarlyInvoices], [TotalInvoices], 0)
+
+AverageDPO = AVERAGE('Invoices'[DaysLate])
 </code></pre>
 
 </details>
