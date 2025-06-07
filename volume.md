@@ -54,6 +54,7 @@ Example insights from visualizations:
 - 📌 Identification of cost spikes by category or vendor
 
 <img src="{{ site.baseurl }}/assets/invoice-volume-value-dashboard.png" alt="Invoice Volume & Value Dashboard" class="rounded-xl shadow-md mt-4" />
+<img src="{{ site.baseurl }}/assets/invoice-volume-value-pivot.png" alt="Invoice Volume & Value Pivot" class="rounded-xl shadow-md mt-4" />
 
 ---
 
@@ -68,6 +69,7 @@ Example insights from visualizations:
 ### 🛠 Tools & Techniques
 
 - **Power BI** 
+- **Excel** 
 
 ---
 
