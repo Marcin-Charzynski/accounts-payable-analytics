@@ -60,7 +60,7 @@ Example insights from visualizations:
 
 ### 💡 Key Findings (Sample)
 
-> Over a 12-month period, the company processed **1,000 invoices**, with monthly volumes ranging between **3 to 71 invoices**.  
+> Over a 17-month period, the company processed **1,000 invoices**, with monthly volumes ranging between **3 to 71 invoices**.  
 > The **average invoice value** was approximately **$10,130**, with noticeable cost peaks in **April** and **July**.  
 > These peaks were driven by large, infrequent purchases from two key vendors.
 
