@@ -51,7 +51,7 @@ Example insights from visualizations:
 
 ### 💡 Key Findings (Sample)
 
-> The company worked with **85 unique suppliers** over the reporting period.  
+> The company worked with **50 unique suppliers** over the reporting period.  
 > Just **5 vendors** accounted for **47%** of total invoice value.  
 > Vendor ‘ACME Corp’ issued the highest number of invoices (**124**) and was responsible for the single largest invoice (**$18,900**).  
 > Several high-value vendors offer **net 30 terms**, but early payment discounts were not consistently utilized.
