@@ -12,10 +12,16 @@ This section explores invoice volume and value trends across time — key for co
 
 ### 🔍 Objectives
 
-- Track the number of invoices issued **monthly**, **quarterly**, or **annually**.
-- Monitor total invoiced **amounts** over time.
-- Calculate the **average invoice value**.
-- Identify trends in **spending patterns**, including seasonal spikes or anomalies.
+- Understand the volume of invoices processed over time (monthly, quarterly, annually).
+
+- Monitor the total cost of invoiced purchases across time periods.
+
+- Track the average invoice value to detect pricing or purchasing shifts.
+
+- Identify spending anomalies and seasonal spikes that may signal unusual activity or cost control issues.
+
+- Support budgeting, forecasting, and cost optimization efforts through data-driven insights.
+
 
 ---
 
@@ -53,15 +59,15 @@ Example insights from visualizations:
 
 ### 💡 Key Findings (Sample)
 
-> Over a 12-month period, the company processed **1,000 invoices**, with monthly volumes ranging between **60 to 120 invoices**.  
-> The **average invoice value** was approximately **$1,350**, with noticeable cost peaks in **March** and **September**.  
+> Over a 12-month period, the company processed **1,000 invoices**, with monthly volumes ranging between **56 to 137 invoices**.  
+> The **average invoice value** was approximately **$10,130**, with noticeable cost peaks in **July** and **October**.  
 > These peaks were driven by large, infrequent purchases from two key vendors.
 
 ---
 
 ### 🛠 Tools & Techniques
 
-- **Power BI** – Time intelligence, aggregations, custom date tables  
+- **Power BI** 
 
 ---
 
