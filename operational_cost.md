@@ -51,7 +51,7 @@ Example insights from visualizations:
 
 > The average cost to manually process one invoice was **$7.65**, compared to **$3.13** for automated processing.  
 > Total administrative costs for AP exceeded **$2,200**.  
-> Automation initiatives resulted in a **35% reduction** in operational costs, yielding an estimated ROI of **150%** within the first year.
+> Automation initiatives resulted in a **59.10% reduction** in operational costs, yielding an estimated ROI of **150%** within the first year.
 
 ---
 
