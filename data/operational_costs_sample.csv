@@ -2,7 +2,7 @@ CostID,Category,Description,Amount,Period
 C0001,Manual Invoice Entry,Labor cost for manually entering invoices,6800.00,2025-04
 C0002,Invoice Validation,Resources used to verify invoice correctness,4250.00,2025-04
 C0003,Exception Handling,Managing discrepancies and invoice errors,3100.00,2025-04
-C0004,Automation Software Licenses,OCR, RPA, or workflow system licensing,9200.00,2025-04
+C0004,Automation Software Licenses,"OCR, RPA, or workflow system licensing",9200.00,2025-04
 C0005,AP Staff Salaries,Salaries for AP clerks and specialists,18500.00,2025-04
 C0006,Training and Onboarding,Employee training on AP systems and procedures,2300.00,2025-04
 C0007,Vendor Communication,Effort related to vendor inquiries and clarifications,3750.00,2025-04
@@ -12,4 +12,4 @@ C0010,Compliance and Audit Readiness,Preparations and compliance checks for audi
 C0011,Dispute Resolution,Time and resources for resolving invoice disputes,2600.00,2025-04
 C0012,Document Archiving,Physical or digital invoice storage services,1200.00,2025-04
 C0013,Workflow System Maintenance,IT maintenance of invoice approval systems,3900.00,2025-04
-C0014,Reporting and Analytics,Generating AP dashboards, reports, and performance metrics,2800.00,2025-04
+C0014,Reporting and Analytics,"Generating AP dashboards, reports, and performance metrics",2800.00,2025-04
