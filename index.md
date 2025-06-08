@@ -21,8 +21,4 @@ Each page contains a specific area of analysis based on simulated transactional 
 
 - 🤝 [Vendor Analysis]({{ site.baseurl }}/vendor-analysis/):Identify top suppliers, their invoice patterns, and opportunities for negotiation.
 
-- 🧾 [Discrepancies & Errors]({{ site.baseurl }}/errors/):Analyze data inconsistencies and rejection reasons in the invoicing process.
-
-- 🔄 [Procure-to-Pay Cycle]({{ site.baseurl }}/cycle/):Assess processing time from invoice receipt to payment and detect process bottlenecks.
-
 - 🛠 [Operational Cost Control]({{ site.baseurl }}/operational-cost-control/):Estimate cost per invoice and identify benefits of automation or outsourcing.
