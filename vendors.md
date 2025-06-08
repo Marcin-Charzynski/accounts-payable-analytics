@@ -52,9 +52,8 @@ Example insights from visualizations:
 ### 💡 Key Findings (Sample)
 
 > The company worked with **50 unique suppliers** over the reporting period.  
-> Just **5 vendors** accounted for **47%** of total invoice value.  
-> Vendor ‘ACME Corp’ issued the highest number of invoices (**124**) and was responsible for the single largest invoice (**$18,900**).  
-> Several high-value vendors offer **net 30 terms**, but early payment discounts were not consistently utilized.
+> Just **5 vendors** accounted for **14.3%** of total invoice value, indicating that spending is relatively evenly distributed across suppliers rather than being concentrated.  
+> Vendor ‘V0025’ issued the highest number of invoices (**29**)
 
 ---
 
@@ -96,6 +95,20 @@ TOPN(5,
     [TotalSpend],
     DESC
 )
+
+Top5Spend = 
+CALCULATE(
+    [TotalInvoiceAmount],
+    TOPN(
+        5,
+        VALUES('Invoices'[VendorID]),
+        CALCULATE(SUM('Invoices'[Amount])),
+        DESC
+    )
+)
+
+PctTop5Spend = 
+DIVIDE([Top5Spend], [TotalInvoiceAmount], 0)
 </code></pre>
 
 </details>
