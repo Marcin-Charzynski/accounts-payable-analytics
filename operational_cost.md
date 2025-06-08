@@ -57,7 +57,7 @@ Example insights from visualizations:
 
 ### 🛠 Tools & Techniques
 
-- **Power BI** – Cost allocation, benchmarking  
+- **Power BI** – Cost allocation  
 - DAX – Average cost calculations, ROI metrics  
 
 ---
