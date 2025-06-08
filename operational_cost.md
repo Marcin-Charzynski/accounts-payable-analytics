@@ -51,7 +51,7 @@ Example insights from visualizations:
 
 > The average cost to manually process one invoice was **$7.65**, compared to **$3.13** for automated processing.  
 > Total administrative costs for AP exceeded **$2,200**.  
-> Automation initiatives resulted in a **59.10% reduction** in operational costs, yielding an estimated ROI of **150%** within the first year.
+> By automating invoice processing, operational costs dropped by 59.10%, generating an impressive first-year ROI of 569%.
 
 ---
 
@@ -108,6 +108,16 @@ CALCULATE(
 ) * CALCULATE(
     COUNT('Invoices'[InvoiceID]),
     'Invoices'[ProcessingType] = "Auto"
+)
+
+TotalCostOfAutomation = 
+CALCULATE(
+    SUM(Costs[Amount]),
+    Costs[Category] IN {
+        "Automation Software Licenses",
+        "Workflow System Maintenance",
+        "Outsourced Invoice Processing"
+    }
 )
 </code></pre>
 
